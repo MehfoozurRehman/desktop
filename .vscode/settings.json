@@ -1,41 +1,23 @@
 {
-  "typescript.tsdk": "./node_modules/typescript/lib",
   "search.exclude": {
-    ".awcache": true,
-    "**/dist": true,
-    "**/node_modules": true,
-    "**/out": true,
-    "app/test/fixtures": true,
-    "vendor/yarn-*": true,
-    "app/static/common/choosealicense.com": true
+    "**/.sst": true
   },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/out": true,
-    ".awcache": true,
-    ".eslintcache": true
-  },
-  "files.insertFinalNewline": true,
-  "editor.tabSize": 2,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "editor.formatOnSave": true,
-  "prettier.ignorePath": ".prettierignore",
-  "eslint.options": {
-    "overrideConfigFile": ".eslintrc.yml",
-    "rulePaths": ["eslint-rules"]
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
