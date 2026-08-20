@@ -12,7 +12,6 @@ vendor/desktop-trampoline/build/
 .awcache
 .idea/
 .vs/
-.vscode/*.log
 .eslintcache
 *.iml
 .envrc
@@ -20,3 +19,7 @@ junit*.xml
 *.swp
 tslint-rules/
 playwright-videos/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
